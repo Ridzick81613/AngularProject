@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Red Eye Reports - For Reporters</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/forReporters.css">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<style>
+
+  ul {list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;}
+
+  li {float: left;}
+
+  li a {display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;}
+
+  li a:hover {background-color: white;
+              font-weight: bolder;}
+
+</style>
+
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="forReporters.html">For Reporters</a></li>
+  <li style="float:right;padding-top:10px;padding-right:25px"><img src="images/whitewithred.png" alt="Company Logo" height="40" width="40"></li>
+</ul>
+
+  <div class="container">
+    <div class="row">
+      <div class="five columns" style="margin-top: 10%; position: relative; right: 35px;">
+        <h4>Welcome</h4>
+        <section id="main" style="color:white;"></section>
+        <p style="color:white;">Write and Submit Your Story.</p>
+      </div>
+      <div class="reportArea">
+        <textarea style="height: 450px; width: 380px" class="seven columns" placeholder="What's Happening?" id="reportInput"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="buttonStuff">
+    <input class="button-primary" type="submit" value="Submit">
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="app.js"></script>
+<script>
+$(document).ready(function(){
+  fetchData();
+});
+</script>
+
+</body>
+</html>
