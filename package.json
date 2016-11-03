@@ -1,0 +1,19 @@
+{
+  "name": "angularproject",
+  "version": "1.0.0",
+  "description": "angular project news and weather site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ridzick81613/AngularProject.git"
+  },
+  "author": "Mike",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ridzick81613/AngularProject/issues"
+  },
+  "homepage": "https://github.com/Ridzick81613/AngularProject#readme"
+}

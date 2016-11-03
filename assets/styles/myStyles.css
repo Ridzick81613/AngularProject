@@ -1,0 +1,60 @@
+nav {
+  background-color: #2F4F4F;
+}
+
+body{
+  background-image: url("../images/coffee.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 75%;
+  background-size: cover;
+}
+
+.colorRed{
+  color:red;
+}
+
+h6 {
+  color: white;
+  position:absolute;
+  left: 75%;
+  top: 75%;
+}
+
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    display: flex;
+    border: 1px solid #ccc;
+    /*border-radius: 4px;*/
+    box-sizing: border-box;
+}
+
+button[type=button] {
+    width: 50%;
+    background-color:#2F4F4F;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type=button]:hover {
+    background-color: red;
+}
+
+.div {
+    padding: 20px;
+}
+
+.whiteFont {
+  color:white;
+}
+
+.labelForInput{
+  font-style: italic;
+  color: white;
+}
