@@ -32,33 +32,46 @@
     </nav>
   </div>
 
+//FOR backend communication to an api
+//npm install request --save;
+// request(url, getWeather);
+// const getWeather = (err, res, body)=>{
+//body=JSON.parse(body);
+//console.log(body);
+//}
+
   <h1 class="colorRed">Red Eye Reports</h1>
-<div class="row">
-  <div class="news col-4">
-    <form action="">
-      <label class="labelForInput">Search for News</label>
-      <input class="whiteFont" type="text" id="newsSearch" name="newsSearch">
-      <button class="button" type="button">Submit</button>
-    </form>
-  </div>
 
-  <div class="allNews col-4">
+<section class="row">
+  <div class="news">
     <form>
-      <label class="labelForInput">Get All News</label>
-      <button class="button" type="button">All Weather</button>
-    </form>
-  </div>
-
-  <div class="weather col-4">
-    <form action="">
-      <label class="labelForInput">Search for Weather (Enter ZIP)</label>
-      <input class="whiteFont" type="text" id="newsSearch" name="weatherSearch">
+      <label for="newsSearch" class="labelForInput">Search for News</label>
+      <input id="newsSearch" class="whiteFont" type="text" id="newsSearch" name="newsSearch">
       <button class="button" type="button">Submit</button>
     </form>
   </div>
-</div>
+</section>
 
-  <h6>Your Daily Shot of News and Weather</h6>
+<section class="row">
+  <div class="allNews">
+    <form>
+      <label for="allNewsId" class="labelForInput">Get All News</label>
+      <button id="allNewsId" class="button" type="button">All Weather</button>
+    </form>
+  </div>
+</section>
+
+<section class="row">
+  <div class="weather">
+    <form>
+      <label for="weatherId" class="labelForInput">Search for Weather (Enter ZIP)</label>
+      <input id="weatherId" class="whiteFont" type="text" id="newsSearch" name="weatherSearch">
+      <button class="button" type="button">Submit</button>
+    </form>
+  </div>
+</section>
+
+<h6>Your Daily Shot of News and Weather</h6>
 
 
 </body>

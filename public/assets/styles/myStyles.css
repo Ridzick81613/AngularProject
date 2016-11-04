@@ -10,15 +10,10 @@ body{
   background-size: cover;
 }
 
-.colorRed{
-  color:red;
-}
-
 h6 {
+  text-align: center;
   color: white;
-  position:absolute;
-  left: 75%;
-  top: 75%;
+  margin-top: 20%;
 }
 
 input[type=text], select {
@@ -44,20 +39,25 @@ button[type=button]:hover {
     background-color: red;
 }
 
+.colorRed{
+  text-align: center;
+  color:red;
+}
+
 .news {
   float:left;
   padding: 20px;
-  position: 50%;
 }
 
 .allNews{
   float:left;
   padding: 20px;
+
 }
 
 .weather {
-    float:left;
-    padding: 20px;
+  float:left;
+  padding: 20px;
 }
 
 .whiteFont {
@@ -65,29 +65,14 @@ button[type=button]:hover {
 }
 
 .labelForInput{
-  font-size: 24px;
+  font-size: 20px;
   font-style: italic;
   color: white;
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-.row {
-  margin-top: 5%;
-  width: 100%
+  padding: 3px 3px 3px 3px;
+  display: block;
+  text-align: center;
 }
 
 .button {
-  width:300px;
+
 }
