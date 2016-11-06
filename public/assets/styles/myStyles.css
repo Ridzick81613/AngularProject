@@ -9,34 +9,20 @@ body{
   background-position: 50% 75%;
   background-size: cover;
 }
-
+h5{
+  text-align: center;
+  color:white;
+  font-style: italic;
+}
 h6 {
   text-align: center;
   color: white;
-  margin-top: 20%;
+  margin-top: 2%;
 }
 
-input[type=text], select {
-    padding: 12px 20px;
-    margin: 5px 0;
-    display: flex;
-    border: 1px solid #ccc;
-    /*border-radius: 4px;*/
-    box-sizing: border-box;
-}
-
-button[type=button] {
-    background-color:#2F4F4F;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button[type=button]:hover {
-    background-color: red;
+hr {
+  border-style: inset;
+  border-width: 5px;
 }
 
 .colorRed{
@@ -50,7 +36,7 @@ button[type=button]:hover {
 }
 
 .allNews{
-  float:left;
+  float:right;
   padding: 20px;
 
 }
@@ -68,11 +54,17 @@ button[type=button]:hover {
   font-size: 20px;
   font-style: italic;
   color: white;
-  padding: 3px 3px 3px 3px;
-  display: block;
-  text-align: center;
 }
 
 .button {
+  display:block;
+  text-align: center;
+}
 
+.content{
+  margin-top: 100%;
+}
+
+section{
+  margin-top: 50px;
 }

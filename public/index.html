@@ -10,6 +10,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 <!--My Styles-->
 <link rel="stylesheet" href="assets/styles/myStyles.css">
+<!--My server.js-->
+<script src="../server.js"></script>
+<!--dark sky controller js-->
+<script src="assets/controllers/darkSkyController.js"></script>
 
 <meta charset="UTF-8">
 
@@ -17,7 +21,7 @@
 
 </head>
 
-<body>
+<body ng-app="myApp" ng-controller="myCtrl">
 
   <div>
     <nav>
@@ -25,54 +29,63 @@
         <a class="brand-logo center"><img src="assets/images/whitewithred.png" alt="logo" height="42" width="42" style="margin-top:10px;"></a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
           <li><a href="">For Reporters</a></li>
-          <!-- <li><a href="">B</a></li>
-          <li><a href="">C</a></li> -->
+          <li><a href="">Archive</a></li>
+          <!-- <li><a href="">C</a></li> -->
         </ul>
       </div>
     </nav>
   </div>
 
-//FOR backend communication to an api
-//npm install request --save;
-// request(url, getWeather);
-// const getWeather = (err, res, body)=>{
-//body=JSON.parse(body);
-//console.log(body);
-//}
+<!--FOR backend communication to an api
+npm install request --save;
+request(url, getWeather);
+const getWeather = (err, res, body)=>{
+body=JSON.parse(body);
+console.log(body);
+}-->
 
-  <h1 class="colorRed">Red Eye Reports</h1>
-
-<section class="row">
-  <div class="news">
-    <form>
-      <label for="newsSearch" class="labelForInput">Search for News</label>
-      <input id="newsSearch" class="whiteFont" type="text" id="newsSearch" name="newsSearch">
-      <button class="button" type="button">Submit</button>
-    </form>
-  </div>
-</section>
-
-<section class="row">
-  <div class="allNews">
-    <form>
-      <label for="allNewsId" class="labelForInput">Get All News</label>
-      <button id="allNewsId" class="button" type="button">All Weather</button>
-    </form>
-  </div>
-</section>
-
-<section class="row">
-  <div class="weather">
-    <form>
-      <label for="weatherId" class="labelForInput">Search for Weather (Enter ZIP)</label>
-      <input id="weatherId" class="whiteFont" type="text" id="newsSearch" name="weatherSearch">
-      <button class="button" type="button">Submit</button>
-    </form>
-  </div>
-</section>
-
+<h1 class="colorRed">Red Eye Reports</h1>
 <h6>Your Daily Shot of News and Weather</h6>
 
+<hr>
+
+<br>
+
+<div class="row">
+  <section class="col s4">
+    <div>
+      <form class="news">
+        <label for="newsSearch" class="labelForInput">Search for News</label>
+        <input id="newsSearch" class="whiteFont" type="text" id="newsSearch" name="newsSearch">
+        <a class="waves-effect waves-light btn">Search</a>
+      </form>
+    </div>
+    <div><p id="displayArea1"></p></div>
+  </section>
+  <br>
+  <section class="allNewsSection col s4 offset-s8">
+    <div>
+      <form class="allNews">
+        <h5>Get All News</h5>
+        <a class="waves-effect waves-light btn">All News</a>
+      </form>
+    </div>
+    <div><p id="displayArea2"></p></div>
+  </section>
+  <br>
+  <section class="col s4">
+    <div>
+      <form class="weather">
+        <label for="weatherId" class="labelForInput">Search for Weather (Enter ZIP)</label>
+        <input id="weatherId" class="whiteFont" type="text" id="newsSearch" name="weatherSearch">
+        <a class="waves-effect waves-light btn">Search</a>
+      </form>
+    </div>
+    <div><p id="displayArea3"></p></div>
+  </section>
+</div>
+
+<br>
 
 </body>
 
