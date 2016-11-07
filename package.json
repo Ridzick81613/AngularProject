@@ -16,6 +16,8 @@
   },
   "homepage": "https://github.com/Ridzick81613/AngularProject#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "fs": "0.0.1-security",
+    "request": "^2.78.0"
   }
 }

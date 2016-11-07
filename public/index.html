@@ -2,18 +2,10 @@
 <html>
 
 <head>
-<!--Compiled and minified AngularJS-->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-<!-- Compiled and minified JavaScript (for Materialize components) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 <!--My Styles-->
 <link rel="stylesheet" href="assets/styles/myStyles.css">
-<!--My server.js-->
-<script src="../server.js"></script>
-<!--dark sky stuff-->
-<script src="assets/scripts/angular-dark-sky.js"></script>
 
 <meta charset="UTF-8">
 
@@ -21,7 +13,7 @@
 
 </head>
 
-<body ng-app="myApp" ng-controller="myCtrl">
+<body>
 
   <div>
     <nav>
@@ -35,14 +27,6 @@
       </div>
     </nav>
   </div>
-
-<!--FOR backend communication to an api
-npm install request --save;
-request(url, getWeather);
-const getWeather = (err, res, body)=>{
-body=JSON.parse(body);
-console.log(body);
-}-->
 
 <h1 class="colorRed">Red Eye Reports</h1>
 <h6>Your Daily Shot of News and Weather</h6>
@@ -87,6 +71,17 @@ console.log(body);
 
 <br>
 
+<!--Compiled and minified AngularJS-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<!--angular route cdn-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+<!--JQuery CDN, ONLY for materialize components purposes, not used in functionality per project guidelines-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Compiled and minified JavaScript (for Materialize components) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<!--My server.js-->
+<script src="../server.js"></script>
+<!--My app.js-->
+<script src="assets/scripts/app.js"></script>
 </body>
-
 </html>
