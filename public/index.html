@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="RedEye">
 
 <head>
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 <!--My Styles-->
 <link rel="stylesheet" href="assets/styles/myStyles.css">
+<!--Compiled and minified AngularJS-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 
 <meta charset="UTF-8">
 
@@ -57,30 +59,25 @@
     <div><p id="displayArea2"></p></div>
   </section>
   <br>
-  <section class="col s4">
+  <section class="col s4" ng-controller="weatherCtrl">
+    <!-- ng-controller="weatherCtrl" -->
     <div>
-      <form class="weather">
+      <form class="weather" ng-submit="getData()">
         <label for="weatherId" class="labelForInput">Search for Weather (Enter ZIP)</label>
-        <input id="weatherId" class="whiteFont" type="text" id="newsSearch" name="weatherSearch">
-        <a class="waves-effect waves-light btn">Search</a>
+        <input ng-model="zipcode" class="whiteFont" type="text" name="weatherSearch">
+        <button class="waves-effect waves-light btn" ng-click="getWeather(zipcode)">Search</button>
       </form>
     </div>
-    <div><p id="displayArea3"></p></div>
+    </div>
   </section>
 </div>
 
 <br>
 
-<!--Compiled and minified AngularJS-->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-<!--angular route cdn-->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
 <!--JQuery CDN, ONLY for materialize components purposes, not used in functionality per project guidelines-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <!-- Compiled and minified JavaScript (for Materialize components) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-<!--My server.js-->
-<script src="../server.js"></script>
 <!--My app.js-->
 <script src="assets/scripts/app.js"></script>
 </body>
