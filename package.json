@@ -14,5 +14,8 @@
   "bugs": {
     "url": "https://github.com/Ridzick81613/AngularProject/issues"
   },
-  "homepage": "https://github.com/Ridzick81613/AngularProject#readme"
+  "homepage": "https://github.com/Ridzick81613/AngularProject#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
