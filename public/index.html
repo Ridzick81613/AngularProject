@@ -60,14 +60,15 @@
   </section>
   <br>
   <section class="col s4" ng-controller="weatherCtrl">
-    <!-- ng-controller="weatherCtrl" -->
     <div>
       <form class="weather" ng-submit="getData()">
-        <label for="weatherId" class="labelForInput">Search for Weather (Enter ZIP)</label>
+        <label for="weatherId" class="labelForInput">Search for the Weather from {{weatherLocation}} (Enter ZIP)</label>
         <input ng-model="zipcode" class="whiteFont" type="text" name="weatherSearch">
-        <button class="waves-effect waves-light btn" ng-click="getWeather(zipcode)">Search</button>
+        <button class="waves-effect waves-light btn" ng-click="findWeather()">Search</button>
       </form>
     </div>
+      <h2>The weather from {{weatherLocation}}</h2>
+      <p>The wind speed is: {{windSpeed}} and the degree is {{windDegree}}</p>
     </div>
   </section>
 </div>
