@@ -2,6 +2,8 @@
 <html ng-app="RedEye">
 
 <head>
+<link rel="shortcut icon" href="favicon.ico">
+
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 <!--My Styles-->
@@ -61,14 +63,13 @@
   <br>
   <section class="col s4" ng-controller="weatherCtrl">
     <div>
-      <form class="weather" ng-submit="getData()">
-        <label for="weatherId" class="labelForInput">Search for the Weather from {{weatherLocation}} (Enter ZIP)</label>
-        <input ng-model="zipcode" class="whiteFont" type="text" name="weatherSearch">
+      <form class="weather">
+        <label for="weatherId" class="labelForInput">Search for the Weather (Enter ZIP)</label>
+        <input ng-model="zip" class="whiteFont" type="text" name="weatherSearch">
         <button class="waves-effect waves-light btn" ng-click="findWeather()">Search</button>
       </form>
     </div>
-      <h2>The weather from {{weatherLocation}}</h2>
-      <p>The wind speed is: {{windSpeed}} and the degree is {{windDegree}}</p>
+      <h2 class="whiteFont">The Weather For Your Area Is: {{printarea}}</h2>
     </div>
   </section>
 </div>
